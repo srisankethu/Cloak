@@ -99,7 +99,8 @@ public class App<T extends ImageBase<T>> extends JPanel
 
 			// Enables cloaking on double mouse-click
 			if(cloak%2 == 1) {
-				pixelblur(buffered, (int)target.a.getX(), (int)target.a.getY(), (int)target.c.getX(), (int)target.c.getY());
+				//pixelblur(buffered, (int)target.a.getX(), (int)target.a.getY(), (int)target.c.getX(), (int)target.c.getY());
+				vanish(buffered, (int)target.a.getX(), (int)target.a.getY(), (int)target.c.getX(), (int)target.c.getY(), 10);
 			}
 
 			synchronized( workImage ) {
